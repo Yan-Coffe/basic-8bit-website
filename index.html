@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site 8-Bit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>🌟 BEM-VINDO AO MUNDO 8-BIT 🌟</header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Site em Estilo Retrô</h2>
+    <p>Inspirado nos clássicos dos anos 80 e 90!</p>
+    <button onclick="playSound()">COMEÇAR!</button>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>🎮 Nostalgia</h3>
+      <p>Reviva os velhos tempos com estilo pixelado.</p>
+    </div>
+    <div class="card">
+      <h3>💾 Estabilidade</h3>
+      <p>Funciona rápido, como um cartucho bem assoprado.</p>
+    </div>
+    <div class="card">
+      <h3>✨ Design</h3>
+      <p>Estética retrô com toque moderno e responsivo.</p>
+    </div>
+  </section>
+
+  <!-- eu sofri pra fazer essa telinha plmds -->
+  <div class="video-container">
+    <iframe class="background-video" 
+      src="https://www.youtube.com/embed/NMYchhLQI7o?autoplay=1&mute=1&controls=0&loop=1&playlist=NMYchhLQI7o"
+      frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+    </iframe>
+  </div>
+
+  <footer>
+    © 2025 Mundo 8-Bit - Todos os direitos reservados 🕹️
+  </footer>
+
+  <div class="sprite"></div>
+
+  <audio id="sfx" src="https://www.myinstants.com/media/sounds/mario-coin.mp3"></audio>
+  <script>
+    function playSound() {
+      document.getElementById('sfx').play();
+    }
+  </script>
+
+</body>
+</html>
